@@ -4,14 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ORGANIZEIT - Your Advance TODO </title>
+    <title>Advanced To-Do List</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
-
+    <div class="todo-app">
+        <header>
+            <h1>My To-Do List</h1>
+            <p>Plan your day with ease </p>
+        </header>
+        <main>
+            <div class="task-input">
+                <input type="text" id="new-task" placeholder="Enter a new task...">
+                <button id="add-task-btn">Add Task</button>
+            </div>
+            <div class="filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+            </div>
+            <ul id="task-list"></ul>
+        </main>
+        <footer>
+            <p>Built with Omkar | Advanced To-Do List</p>
+        </footer>
+    </div>
     <script src="script.js"></script>
 </body>
 
